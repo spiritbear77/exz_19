@@ -1,0 +1,30 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ex_sd.MainWindow"
+        Title="ex_sd">
+    <Grid>
+        <ListBox x:Name="ListUsers" x:CompileBindings="False">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0 0 10 0">Имя:</TextBlock>
+                    <TextBlock Margin="0 0 10 0" Text="{Binding Name}"/>
+                    <TextBlock Margin="0 0 10 0">Фамилия:</TextBlock>
+                    <TextBlock Margin="0 0 10 0" Text="{Binding Lastname}"/>
+                    <TextBlock Margin="0 0 10 0">Номер телефона:</TextBlock>
+                    <TextBlock Margin="0 0 10 0" Text="{Binding Number}"/>
+                    <TextBlock Margin="0 0 10 0">Дата рождения:</TextBlock>
+                    <TextBlock Margin="0 0 10 0" Text="{Binding DateBurth}"/>
+                    <TextBlock Margin="0 0 10 0">Уровень подготовки:</TextBlock>
+                    <TextBlock Margin="0 0 10 0" Text="{Binding Level}"/>
+                    <TextBlock Margin="0 0 10 0">Скидка:</TextBlock>
+                    <TextBlock Margin="0 0 10 0" Text="{Binding Sale}"/>
+                </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
